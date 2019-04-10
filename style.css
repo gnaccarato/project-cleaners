@@ -27,7 +27,7 @@ body {
 
 .header_logo img {
     height: 40px;
-    width: 40px;    
+    width: 130px;    
 }
 
 .header_social {    
@@ -227,7 +227,7 @@ body {
     width: 60vw;
     margin-top: 125px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
 }
 
 .contact_heading {
@@ -241,8 +241,14 @@ body {
 }
 
 .contact_form {
-    margin: 50px auto;    
+    margin: 50px auto;        
     text-align: center;            
+}
+.contact_form input {
+    margin: 10px auto;
+    width: 400px;
+    height: 28px;
+    border-radius: 1px;    
 }
 
 .contact_form button{
@@ -264,7 +270,11 @@ body {
 .main_map {
     width: 100vw;
     text-align: center;
-    margin: 125px auto;
+    margin: 125px auto;        
+}
+
+.main_map img{
+    width: 100vw;            
 }
 
 .main_faq {
@@ -275,12 +285,14 @@ body {
 
 #footer {    
     width: 60vw;
-    margin: 0 auto;    
+    margin: 0 auto;
+        
 }
 
 .footer_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;        
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 35px auto;                
 }
 
 .footer_grid ul{
@@ -288,7 +300,11 @@ body {
 }
 
 .footer_grid ul li{
-    
+    margin: 5px auto;   
+}
+
+.footer_grid h4{
+    color: #35b00b;
 }
 
 .footer_grid ul li a{
@@ -296,22 +312,18 @@ body {
     color: black;    
 }
 
-.footer_grid ul li a:hover{
-    text-decoration: underline;
+.footer_grid ul li a:hover{    
     color: #35b00b;
-}
-
-.footer_logo {
-    
 }
 
 .footer_logo img{
-    height: 50px;
-    width: 50px;    
+    height: 60px;
+    width: 190px;    
 }
 
-.copyright {    
+.copyright {
+    font-size: 1.3rem;    
     text-align: center;
     color: #35b00b;
-    margin: 15px auto;            
+    margin: 15px auto;                
 }
