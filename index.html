@@ -168,8 +168,7 @@
                     </form>
                 </div>
             </div>
-            <div class="main_map">
-                <img src="/img/map.jpeg" alt="Map" />
+            <div id="main_map">                
             </div>
         </div>
 
@@ -227,7 +226,23 @@
                 </div>
             </div>
         </footer>
+        <script>
+            function initMap() {
+                let options = {
+                    zoom: 13,
+                    center: {lat: 43.642531, lng: -79.387018}
+                }
 
-        <script></script>
+                let map = new google.maps.Map(document.getElementById('main_map'), options);
+
+                let marker = new google.maps.Marker({
+                    position:{lat: 43.642531, lng: -79.387018},
+                    map: map
+                });
+            }
+        </script>        
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF3H95O6ut8ahcn7kqH4284mr5ofUs84k&callback=initMap">
+        </script>
     </body>
 </html>

@@ -12,10 +12,9 @@ body {
 #header_navbar {
     position: fixed;
     width: 100vw;
-    background: #111;
-    /* border-bottom: 1px solid #f4f4f4; */
+    background: #111;    
     z-index: 2;
-    opacity: 0.9;
+    opacity: 0.9;    
 }
 
 #header {
@@ -87,7 +86,7 @@ body {
     background-position: bottom;
     width: 100vw;
     height: 100vh;
-    background-attachment: fixed;
+    background-attachment: fixed;    
 }
 
 #jumbotron_2 {
@@ -98,7 +97,7 @@ body {
     background-position: bottom;
     width: 100vw;
     height: 60vh;
-    background-attachment: fixed;
+    background-attachment: fixed;    
 }
 
 .jumbotron_content {
@@ -125,7 +124,7 @@ body {
 
 .jumbotron_content h3 {
     margin: 25px auto;
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: #0299f0;
     position: relative;
@@ -284,7 +283,7 @@ body {
     display: inline-grid;
     grid-template-columns: 1fr;
     margin: 25px 45px;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .main_testimonials {
@@ -298,7 +297,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #f4f4f4;
+    color: #f4f4f4;   
 }
 
 .testimonials_h3 {
@@ -388,15 +387,9 @@ body {
     transition: 0.3s;
 }
 
-.main_map {
+#main_map {
     width: 100vw;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 50px;
-}
-
-.main_map img {
-    width: 100vw;
+    height: 50vh;        
 }
 
 .main_faq {
