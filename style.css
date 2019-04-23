@@ -128,28 +128,57 @@ body {
     font-size: 3rem;
     text-transform: uppercase;
     color: #0299f0;
+    position: relative;
+    animation: jumbo_h3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jumbo_h3 {
+    0% {top: -300px}
+    100% {top: 0px}
 }
 
 .jumbotron_content h5 {
     margin: 25px auto;
     font-size: 1.3rem;
+    animation: jumbo_h5;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jumbo_h5 {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
 .jumbotron_content button {
     padding: 1rem;
     font-size: 1.1rem;
     color: #f4f4f4;
-    background: #0299f0;
-    border: 1px solid #f4f4f4;
+    background: transparent;    
+    border: 1px solid #0299f0;
     border-radius: 4px;
     transition: 0.3s;
+    animation: jumbo_button;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
-.jumbotron_content button:hover {
+@keyframes jumbo_button {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.jumbotron_content button:hover {    
     color: #f4f4f4;
-    background: transparent;
+    background: #0299f0;
+    border: 1px solid #f4f4f4;
     cursor: pointer;
-    border: 1px solid #0299f0;
     transition: 0.3s;
 }
 
@@ -186,7 +215,7 @@ body {
     display: inline-grid;
     grid-template-columns: 1fr;
     margin: 25px;
-    font-size: 1.1rem;
+    font-size: 1.1rem;    
 }
 
 .services_content img {
@@ -207,7 +236,7 @@ body {
     font-size: 1.1rem;
     border: 1px solid #f4f4f4;
     border-radius: 4px;
-    transition: 0.3s;
+    transition: 0.3s;    
 }
 
 .services_content button:hover {
