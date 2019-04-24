@@ -24,7 +24,7 @@ body {
 
 .header_logo {
     float: left;
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 .header_logo img {
@@ -34,9 +34,9 @@ body {
 
 .header_social {
     float: right;
-    margin-top: 5px;
+    margin-top: 4px;    
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 30px;
     color: #f4f4f4;
 }
 
@@ -52,10 +52,10 @@ body {
     align-items: center;
 }
 
-#navbar ul {
+#navbar ul {    
     list-style: none;
-    font-size: 1.1rem;
-    margin: 10px auto;
+    font-size: 1.2rem;
+    margin: 10px;
 }
 
 #navbar ul li {
@@ -123,8 +123,8 @@ body {
 }
 
 .jumbotron_content h3 {
-    margin: 25px auto;
-    font-size: 4rem;
+    margin: 25px auto;    
+    font-size: 3.5rem;
     text-transform: uppercase;
     color: #0299f0;
     position: relative;
@@ -461,4 +461,206 @@ footer {
     text-align: center;
     color: #0299f0;
     margin: 15px auto;
+}
+
+@media only screen and (max-width: 640px) {
+       
+    #header {
+        width: 10vw;
+        margin: 0 auto;
+    }      
+    
+    .header_social {
+        display: none;
+    }   
+    
+    #navbar {
+        display: none;
+    }
+    
+    #jumbotron {        
+        background-attachment: scroll;    
+    }  
+    
+    .jumbotron_content h3 {            
+        font-size: 1.5rem;        
+    }   
+    
+    .jumbotron_content h5 {       
+        font-size: 1.1rem;
+    }
+    
+    #main {
+        margin: 0 auto;
+    }
+    
+    .main_heading {
+        width: 100vw;
+        text-align: center;
+        margin: 125px auto;
+    }
+    
+    .main_heading h3 {
+        font-size: 1.5rem;
+        margin: 25px auto;
+        color: #0299f0;
+    }
+    
+    .main_heading p {
+        font-size: 1.1rem;
+        margin: 35px;
+        color: #666;
+    }
+    
+    .main_grid {
+        width: 100vw;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 125px;
+    }
+    
+    .services_content {
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        margin: 25px;
+        font-size: 1.1rem;    
+    }
+    
+    .services_content img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .services_h4 {
+        margin: 15px auto;
+        color: #666;
+    }  
+    
+    .banner_grid {        
+        padding: 50px;
+    }
+    
+    .banner_content {
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        margin: 25px 45px;
+        font-size: 1.2rem;        
+    }
+
+    .main_ceo {
+        width: 100vw;
+        margin: 15px auto;
+        display: block;
+        text-align: center;        
+    }
+    
+    .main_ceo img {                
+        width: 300px;
+        height: 200px;        
+    }
+    
+    .ceo_content {
+        margin: 15px 35px;
+        font-size: 1rem;
+    }
+    
+    .ceo_p {
+        margin: 25px auto;
+    }
+
+    .main_testimonials {
+        width: 100vw;
+        margin: 125px auto;
+        padding-top: 125px;
+        padding-bottom: 125px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+            url("/img/jumbo3.jpeg");
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #f4f4f4;   
+    }
+    
+    .testimonials_h3 {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .testimonials_p {
+        margin: 15px auto;
+        line-height: 1.5;
+    }
+    
+    .testimonial_grid {
+        width: 100vw;
+        margin: 25px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial_content {
+        margin: 15px 35px;
+        font-size: 13px;
+    }
+
+    .main_contact {
+        width: 100vw;
+        margin-top: 125px auto;       
+    }
+    
+    .contact_heading {
+        text-align: center;
+        margin: 25px auto;
+    }
+    
+    .contact_h2 {
+        margin: 50px auto;
+        font-size: 1.5rem;        
+    }
+    
+    .contact_heading p {
+        margin: 50px 35px;
+        font-size: 1rem;        
+    }
+    
+    .contact_form {
+        margin: 50px 35px;
+        text-align: center;        
+    }    
+
+    .main_faq {
+        width: 100vw;        
+    }
+    
+    .main_faq h4 {        
+        font-size: 1.3rem;
+        
+    }
+    
+    .main_faq p {        
+        font-size: 1rem;
+        
+    }
+
+    #main_map {
+        width: 100vw;
+        height: 40vh;        
+    }   
+    
+    #footer {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    
+    .footer_grid {
+        display: none;
+    }   
+    
+    .copyright {
+        font-size: 1.1rem;
+        text-align: center;
+        color: #0299f0;
+        margin: 5px auto;
+    }
 }
